@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: app-bob-gateway
+  cloud:
+    config:
+      discovery:
+        service-id: APP-BOB-CONFIG
+        enabled: true
+      profile: dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka
+
+
